@@ -18,23 +18,26 @@ module.exports = function (grunt) {
 	grunt.registerMultiTask('githubMarkdown', 'Performing jsontl transformations', function () {
 
 		var content,
-			createdFiles = 0;
-
-		marked.setOptions({
-			renderer: new marked.Renderer(),
-			gfm: true,
-			tables: true,
-			breaks: false,
-			pedantic: false,
-			sanitize: true,
-			smartLists: true,
-			smartypants: false
-		});
+				createdFiles = 0,
+				markedOptions = {
+					renderer: new marked.Renderer(),
+					gfm: true,
+					tables: true,
+					breaks: false,
+					pedantic: false,
+					sanitize: true,
+					smartLists: true,
+					smartypants: false
+				};
 
 		// Merge task-specific and/or target-specific options with these defaults.
 		var options = this.options({
-			template: path.join(__dirname, 'template.html')
+			template: path.join(__dirname, 'template.html'),
+			markedOptions: markedOptions
 		});
+
+		marked.setOptions(options.markedOptions);
+
 
 		// Transform specified files.
 		this.files.forEach(function (f) {

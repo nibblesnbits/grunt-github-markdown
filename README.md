@@ -43,6 +43,10 @@ A path to a custom template (`.html`) file.
 
 grunt-github-markdown uses [doT](http://olado.github.io/doT/) for templating, but all you need to know is that in a custom template, `{{=it.content}}` is replaced with the output html.
 
+#### markedOptions
+
+An object to pass to the [marked library](https://github.com/chjj/marked#usage). 
+
 ### Usage Example
 
 ```js
