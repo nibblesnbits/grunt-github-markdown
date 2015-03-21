@@ -1,6 +1,6 @@
 {
   "name": "grunt-github-markdown",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Grunt plugin for github-flavored markdown",
   "homepage": "https://github.com/wtfsven/grunt-github-markdown",
   "repository": "https://github.com/wtfsven/grunt-github-markdown.git",
