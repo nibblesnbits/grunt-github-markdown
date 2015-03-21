@@ -39,7 +39,9 @@ grunt.initConfig({
 
 #### template
 
-A path to a custom template (`'.html`') file.
+A path to a custom template (`.html`) file.
+
+grunt-github-markdown uses [doT](http://olado.github.io/doT/) for templating, but all you need to know is that in a custom template, `{{=it.content}}` is replaced with the output html.
 
 ### Usage Example
 
