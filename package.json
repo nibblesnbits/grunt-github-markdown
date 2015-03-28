@@ -2,12 +2,12 @@
   "name": "grunt-github-markdown",
   "version": "0.1.1",
   "description": "Grunt plugin for github-flavored markdown",
-  "homepage": "https://github.com/wtfsven/grunt-github-markdown",
-  "repository": "https://github.com/wtfsven/grunt-github-markdown.git",
+  "homepage": "https://github.com/nibblesnbits/grunt-github-markdown",
+  "repository": "https://github.com/nibblesnbits/grunt-github-markdown.git",
   "author": {
     "name": "Stephen Collins",
-    "email": "wtfsven@live.com",
-    "url": "http://github.com/wtfsven"
+    "email": "s.g.collins@outlook.com",
+    "url": "http://github.com/nibblesnbits"
   },
   "keywords": [
     "gruntplugin"
