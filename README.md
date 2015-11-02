@@ -31,7 +31,7 @@ grunt.initConfig({
     your_target: {
       // Target-specific file lists and/or options go here.
     },
-  },
+  }
 })
 ```
 
@@ -52,11 +52,15 @@ An object to pass to the [marked library](https://github.com/chjj/marked#usage).
 ```js
 grunt.initConfig({
   github_markdown: {
-    options: {},
+    options: {
+      markedOptions: {
+        smartyPants: false
+      }
+    },
     files: {
       'dest/folder': ['src/index.md'],
     },
-  },
+  }
 })
 ```
 
@@ -64,4 +68,4 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## License
-Copyright (c) 2015 Stephen Collins. Licensed under the MIT license.
+Licensed under the MIT license.
